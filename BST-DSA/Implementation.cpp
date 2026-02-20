@@ -1,8 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<stack>
-#include<algorithm>
-using namespace std;
+//This file contain the code of the implementation of the Binary Search Tree 
 
 class Node{  //This is the Node class 
 public:
