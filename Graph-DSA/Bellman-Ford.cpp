@@ -32,6 +32,17 @@ public:
             }
         }
 
+        for (int u = 0; u < V; u++) {
+            for (auto it : graph[u]) {
+                int v = it.first;
+                int wt = it.second;
+
+                if (dist[u] != 1e8 && dist[v] > dist[u] + wt) {
+                    return {-1};
+                }
+            }
+        }
+
         return dist;
     }
 };
