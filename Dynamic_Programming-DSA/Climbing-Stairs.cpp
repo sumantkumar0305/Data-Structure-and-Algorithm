@@ -20,3 +20,21 @@ public:
         return fina(n, num);
     }
 };
+
+
+// 2nd approach
+
+class Solution {
+public:
+    int climbStairs(int n) {
+        vector<int>num(n+1, -1);
+        num[0] = 1;
+        num[1] = 1;
+        
+        for(int i = 2; i < n+1; i++){
+            num[i] = num[i-1]+num[i-2];
+        }
+
+        return num[n];
+    }
+};
