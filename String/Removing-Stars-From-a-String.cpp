@@ -1,0 +1,17 @@
+// Leetcode
+// 2390. Removing Stars From a String -> Med.
+
+class Solution {
+public:
+    string removeStars(string s) {
+        string ans = "";
+        for(char c : s){
+            if(c == '*'){
+                if(!ans.empty()) ans.pop_back();
+            } else {
+                ans.push_back(c);
+            }
+        }
+        return ans;
+    }
+};
