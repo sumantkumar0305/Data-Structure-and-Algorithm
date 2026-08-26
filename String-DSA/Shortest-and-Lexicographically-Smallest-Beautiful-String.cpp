@@ -27,7 +27,45 @@ public:
                 }
             }
         }
-
         return ans == temp ? "":ans;
+    }
+};
+
+
+// Optimized code
+class Solution {
+public:
+    string shortestBeautifulSubstring(string s, int k) {
+        int left = 0;
+        int count = 0;
+        int len = INT_MAX;
+        string ans = "";
+
+        for (int right = 0; right < s.length(); right++) {
+            if (s[right] == '1') {
+                count++;
+            }
+
+            while (count > k || (left <= right && s[left] == '0')) {
+                if (s[left] == '1') {
+                    count--;
+                }
+                left++;
+            }
+
+            if (count == k) {
+                int l = right - left + 1;
+                string sub = s.substr(left, l);
+                
+                if (l < len) {
+                    len = l;
+                    ans = sub;
+                } else if (l == len) {
+                    ans = min(ans, sub); 
+                }
+            }
+        }
+
+        return ans;
     }
 };
