@@ -17,9 +17,7 @@ public:
     }
 };
 
-
-// Leetcode
-// 2220. Minimum Bit Flips to Convert Number -> Easy
+// Second Method
 
 class Solution {
 public:
