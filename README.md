@@ -929,9 +929,9 @@ Always understand and test a solution before using it in another project.
 
 If you have suggestions, questions, or want to discuss any of the solutions, feel free to connect with me:
 
-* **GitHub:** [Your GitHub Profile](https://github.com/your-username)
-* **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/your-username/)
-* **Email:** `your-email@example.com`
+* **GitHub:** https://github.com/your-username
+* **LinkedIn:** https://www.linkedin.com/in/sumant-kumar-dev/
+* **Email:** `sumant.kumar0305@gmail.com`
 
 Feel free to open an **Issue** or start a **Discussion** if you have suggestions or find a problem with any solution.
 
