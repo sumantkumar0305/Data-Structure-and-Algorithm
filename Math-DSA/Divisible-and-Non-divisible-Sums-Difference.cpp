@@ -16,3 +16,20 @@ public:
         return nums1-nums2;
     }
 };
+
+
+// Second soution
+class Solution {
+public:
+    int differenceOfSums(int n, int m) {
+        int sum = n*(n+1)/2;
+        int a = m;
+        int rem = n%m;
+        int l = n-rem;
+        int t = (l-a)/m;
+        t++;
+        int sum2 = ((a+l)*t)/2;
+
+        return sum - (2*sum2);
+    }
+};
